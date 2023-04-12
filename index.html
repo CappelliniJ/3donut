@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Donut and Presentation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+        }
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        #presentation {
+            max-width: 50%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+        #presentation h3 {
+            margin-top: 0;
+        }
+        #presentation p {
+            margin: 0.5rem 0;
+        }
+    </style>    
+</head>
+<body>
+    <div id="presentation">
+        <h3 id="slide-title"></h3>
+        <p id="slide-content"></p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="donut.js"></script>
+    <script src="presentation.js"></script>
+</body>
+</html>
+
+
